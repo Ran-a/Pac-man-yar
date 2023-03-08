@@ -40,7 +40,7 @@ public class Pursuer extends GameObj{
     public void setRcd(int rcd) {
         this.rcd = rcd;
     }
-    public void randomChangeDirect(){//用于随机改变enemy的运动方向
+    public void randomChangeDirect(){//用于随机改变enemy的运动方向 此处感谢为我提供思路的作者@RookieStupidCat 
             if (GameFrame.old_myMap[this.y][this.x]==GameFrame.pointNum) {//判断是否为拐点
                 if (rcd<rcdmin) {
                     rcd=rcd+everyRcd;
